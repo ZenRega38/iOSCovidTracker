@@ -1,0 +1,403 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8955DBF3255D0FF5008A9C85 /* CovidTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8955DBF2255D0FF5008A9C85 /* CovidTrackerApp.swift */; };
+		8955DBF5255D0FF5008A9C85 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8955DBF4255D0FF5008A9C85 /* ContentView.swift */; };
+		8955DBF7255D0FF6008A9C85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8955DBF6255D0FF6008A9C85 /* Assets.xcassets */; };
+		8955DBFA255D0FF6008A9C85 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8955DBF9255D0FF6008A9C85 /* Preview Assets.xcassets */; };
+		8955DC03255D10E4008A9C85 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8955DC02255D10E4008A9C85 /* Api.swift */; };
+		8955DC07255D1364008A9C85 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 8955DC06255D1364008A9C85 /* Alamofire */; };
+		8955DC0A255D13B3008A9C85 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8955DC09255D13B3008A9C85 /* Model.swift */; };
+		8975DDC1255D84EE001713E8 /* SwiftWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 8975DDC0255D84EE001713E8 /* SwiftWebImage */; };
+		8975DDC2255D84EE001713E8 /* SwiftWebImage in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 8975DDC0255D84EE001713E8 /* SwiftWebImage */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		8975DDC5255D8999001713E8 /* DetailCovidView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8975DDC4255D8999001713E8 /* DetailCovidView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8975DDC3255D84EE001713E8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8975DDC2255D84EE001713E8 /* SwiftWebImage in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8955DBEF255D0FF5008A9C85 /* CovidTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CovidTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8955DBF2255D0FF5008A9C85 /* CovidTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidTrackerApp.swift; sourceTree = "<group>"; };
+		8955DBF4255D0FF5008A9C85 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8955DBF6255D0FF6008A9C85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8955DBF9255D0FF6008A9C85 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8955DBFB255D0FF6008A9C85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8955DC02255D10E4008A9C85 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		8955DC09255D13B3008A9C85 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		8975DDC4255D8999001713E8 /* DetailCovidView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCovidView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8955DBEC255D0FF5008A9C85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8955DC07255D1364008A9C85 /* Alamofire in Frameworks */,
+				8975DDC1255D84EE001713E8 /* SwiftWebImage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8955DBE6255D0FF5008A9C85 = {
+			isa = PBXGroup;
+			children = (
+				8955DBF1255D0FF5008A9C85 /* CovidTracker */,
+				8955DBF0255D0FF5008A9C85 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8955DBF0255D0FF5008A9C85 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8955DBEF255D0FF5008A9C85 /* CovidTracker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8955DBF1255D0FF5008A9C85 /* CovidTracker */ = {
+			isa = PBXGroup;
+			children = (
+				8955DBF2255D0FF5008A9C85 /* CovidTrackerApp.swift */,
+				8955DBF4255D0FF5008A9C85 /* ContentView.swift */,
+				8955DBF6255D0FF6008A9C85 /* Assets.xcassets */,
+				8955DBFB255D0FF6008A9C85 /* Info.plist */,
+				8955DBF8255D0FF6008A9C85 /* Preview Content */,
+				8955DC02255D10E4008A9C85 /* Api.swift */,
+				8955DC09255D13B3008A9C85 /* Model.swift */,
+				8975DDC4255D8999001713E8 /* DetailCovidView.swift */,
+			);
+			path = CovidTracker;
+			sourceTree = "<group>";
+		};
+		8955DBF8255D0FF6008A9C85 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8955DBF9255D0FF6008A9C85 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8955DBEE255D0FF5008A9C85 /* CovidTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8955DBFE255D0FF6008A9C85 /* Build configuration list for PBXNativeTarget "CovidTracker" */;
+			buildPhases = (
+				8955DBEB255D0FF5008A9C85 /* Sources */,
+				8955DBEC255D0FF5008A9C85 /* Frameworks */,
+				8955DBED255D0FF5008A9C85 /* Resources */,
+				8975DDC3255D84EE001713E8 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CovidTracker;
+			packageProductDependencies = (
+				8955DC06255D1364008A9C85 /* Alamofire */,
+				8975DDC0255D84EE001713E8 /* SwiftWebImage */,
+			);
+			productName = CovidTracker;
+			productReference = 8955DBEF255D0FF5008A9C85 /* CovidTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8955DBE7255D0FF5008A9C85 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					8955DBEE255D0FF5008A9C85 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+				};
+			};
+			buildConfigurationList = 8955DBEA255D0FF5008A9C85 /* Build configuration list for PBXProject "CovidTracker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8955DBE6255D0FF5008A9C85;
+			packageReferences = (
+				8955DC05255D1364008A9C85 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				8975DDBF255D84EE001713E8 /* XCRemoteSwiftPackageReference "SwiftWebImage" */,
+			);
+			productRefGroup = 8955DBF0255D0FF5008A9C85 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8955DBEE255D0FF5008A9C85 /* CovidTracker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8955DBED255D0FF5008A9C85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8955DBFA255D0FF6008A9C85 /* Preview Assets.xcassets in Resources */,
+				8955DBF7255D0FF6008A9C85 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8955DBEB255D0FF5008A9C85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8955DC03255D10E4008A9C85 /* Api.swift in Sources */,
+				8955DBF5255D0FF5008A9C85 /* ContentView.swift in Sources */,
+				8955DBF3255D0FF5008A9C85 /* CovidTrackerApp.swift in Sources */,
+				8955DC0A255D13B3008A9C85 /* Model.swift in Sources */,
+				8975DDC5255D8999001713E8 /* DetailCovidView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8955DBFC255D0FF6008A9C85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8955DBFD255D0FF6008A9C85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8955DBFF255D0FF6008A9C85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"CovidTracker/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = CovidTracker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.regadeveloper.CovidTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8955DC00255D0FF6008A9C85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"CovidTracker/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = CovidTracker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.regadeveloper.CovidTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8955DBEA255D0FF5008A9C85 /* Build configuration list for PBXProject "CovidTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8955DBFC255D0FF6008A9C85 /* Debug */,
+				8955DBFD255D0FF6008A9C85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8955DBFE255D0FF6008A9C85 /* Build configuration list for PBXNativeTarget "CovidTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8955DBFF255D0FF6008A9C85 /* Debug */,
+				8955DC00255D0FF6008A9C85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8955DC05255D1364008A9C85 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.0;
+			};
+		};
+		8975DDBF255D84EE001713E8 /* XCRemoteSwiftPackageReference "SwiftWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/geekaurora/SwiftWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.3.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8955DC06255D1364008A9C85 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8955DC05255D1364008A9C85 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		8975DDC0255D84EE001713E8 /* SwiftWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8975DDBF255D84EE001713E8 /* XCRemoteSwiftPackageReference "SwiftWebImage" */;
+			productName = SwiftWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 8955DBE7255D0FF5008A9C85 /* Project object */;
+}
